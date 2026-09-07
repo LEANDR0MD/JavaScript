@@ -10,7 +10,9 @@
 <body>
     <script>
         var nome = window.prompt('Qual é seu nome ?')
-        documento.write(`seu nome tem ${nome.length} letras.`)
+        document.write(`<h2>Olá ${nome}, seu nome tem ${nome.length} letras.<br></h2>`)
+        document.write(`Seu nome em maiusculo é ${nome.toUpperCase()} <br>`)
+        document.write(`E seu nome em menusculo é ${nome.toLowerCase()}`)
 
     </script>
 </body>
