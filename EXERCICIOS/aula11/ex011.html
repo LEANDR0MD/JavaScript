@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nascional ou Estrangeiro</title>
+</head>
+
+<body>
+    <h1>Nascional ou Estrangeiro</h1>
+
+    <label for="textoid">Você é de qual pais ? </label>
+    <input type="text" name="" id="textoid">
+    <input type="button" value="Enviar" onclick="verificar()">
+
+    <div id="resultado">
+
+    </div>
+
+    <script>
+        function verificar() {
+
+
+            var resposta = window.document.getElementById('textoid')
+            var resultadov = window.document.getElementById('resultado')
+
+
+            var convercao = String(resposta.value)/*Serve para converter a resposta em String*/
+
+
+            if (convercao == 'Brasil') {
+                resultadov.innerHTML = `<p>Você é Brasileiro.</p>`
+            } else {
+                resultadov.innerHTML = `<p>Você é Estrangeiro.</p>`
+            }
+
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

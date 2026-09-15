@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+
+<body>
+    <h1>Sistema de Multas</h1>
+
+    <label for="multaid">Velocidade do Carro</label>
+    <input type="number" name="" id="multaid">
+    <label for="multaid">Km/h</label>
+
+    <input type="button" value="Verificar" onclick="calcular()">
+
+    <div id="resultado">
+
+    </div>
+
+    <script>
+        function calcular() {
+
+
+            var valor = window.document.getElementById('multaid')
+            var resultado = window.document.getElementById('resultado')
+
+
+            var vel = Number(valor.value)/*Serve para converter a resposta em Numeros tanto Inteiros quanto Reais*/
+
+
+            resultado.innerHTML = `<p>Sua velocidade é de <strong>${vel}</storng>Km/h.</p>`
+
+
+            if (vel > 60) {
+                resultado.innerHTML += `<p>Você foi multado por excesso de velocidade.</p>`
+            }
+
+
+            resultado.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`
+        }
+    </script>
+
+
+</body>
+
+</html>
