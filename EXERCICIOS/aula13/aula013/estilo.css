@@ -1,0 +1,31 @@
+body {
+    background-color: blueviolet;
+    font: normal 15pt arial;
+}
+
+header {
+    color: wheat;
+    text-align: center;
+}
+
+section {
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
+    text-align: center;
+}
+
+footer {
+    color: antiquewhite;
+    text-align: center;
+}
+
+#img {
+    max-width: 250px;
+    border-radius: 50%;
+    padding: 10px;
+
+}
