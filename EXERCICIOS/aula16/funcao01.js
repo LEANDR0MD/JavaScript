@@ -1,9 +1,8 @@
 function parimp(n) {
     if (n % 2 == 0) {
-        console.log(`PAR`)
+        return `O valor ${n} é PAR.`
     } else {
-        console.log(`IMPAR`)
+        return `O valor ${n} é ÍMPAR.`
     }
 }
-
-var num = parimp(7)
+console.log(parimp(1))
