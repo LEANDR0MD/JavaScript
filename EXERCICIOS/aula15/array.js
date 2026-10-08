@@ -1,7 +1,6 @@
 let num = [5, 6]
 num[2] = 2
 num.push(3)
-
 num.sort()
 
 console.log(`nosso vetor é (${num.length}) ${num}`)
